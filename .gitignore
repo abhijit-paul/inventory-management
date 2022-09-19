@@ -1,0 +1,10 @@
+.idea
+target
+bin
+.vagrant
+**/*.rs.bk
+*cloudimg-console.log
+*.so
+*.env
+Settings.toml
+dump_files

@@ -1,0 +1,14 @@
+
+name: Rust
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-18.04
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run tests
+      run: FEATURES="--no-default-features"; RUST_BACKTRACE=1; STRIPE_SECRET=randomsecret; cargo test --verbose
